@@ -27,7 +27,7 @@
     <PackageId>NM.Tools.Dotnet.MSbuild.BuildXml</PackageId>
     <PackageType>DotnetTool</PackageType>
     <VersionPrefix>0.0.1</VersionPrefix>
-    <VersionSuffix>alpha1</VersionSuffix>
+    <VersionSuffix>alpha1.1</VersionSuffix>
     <Authors>Nemonuri</Authors>
     <Description>Make basic MSBuild XML templetes on directory chain</Description>
     <Copyright>Copyright (c) $(Authors) 2024</Copyright>
@@ -37,8 +37,11 @@
     <PackageIcon>buildxml_icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>MSBuild;XML;props;targets;tool</PackageTags>
-    <PackageReleaseNotes>First alpha version</PackageReleaseNotes>
+    <PackageReleaseNotes>Add tool command, improve readme.md</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <!-- https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create -->
+    <ToolCommandName>dotnet-buildxml</ToolCommandName>
   </PropertyGroup>
 
   <ItemGroup>
