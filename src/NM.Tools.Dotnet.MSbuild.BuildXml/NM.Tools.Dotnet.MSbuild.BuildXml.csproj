@@ -4,7 +4,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <LangVersion>12</LangVersion>
-    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <InvariantGlobalization>true</InvariantGlobalization>
@@ -25,9 +25,10 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>NM.Tools.Dotnet.MSbuild.BuildXml</PackageId>
+    
     <PackageType>DotnetTool</PackageType>
     <VersionPrefix>0.0.1</VersionPrefix>
-    <VersionSuffix>alpha1.1</VersionSuffix>
+    <VersionSuffix>alpha1.2</VersionSuffix>
     <Authors>Nemonuri</Authors>
     <Description>Make basic MSBuild XML templetes on directory chain</Description>
     <Copyright>Copyright (c) $(Authors) 2024</Copyright>
@@ -37,10 +38,11 @@
     <PackageIcon>buildxml_icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>MSBuild;XML;props;targets;tool</PackageTags>
-    <PackageReleaseNotes>Add tool command, improve readme.md</PackageReleaseNotes>
+    <PackageReleaseNotes>Fix install bug. Add 'PackAsTool = true'</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     <!-- https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create -->
+    <PackAsTool>true</PackAsTool>
     <ToolCommandName>dotnet-buildxml</ToolCommandName>
   </PropertyGroup>
 
