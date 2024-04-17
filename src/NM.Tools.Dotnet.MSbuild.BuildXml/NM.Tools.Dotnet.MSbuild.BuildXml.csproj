@@ -8,6 +8,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <InvariantGlobalization>true</InvariantGlobalization>
+    
+  </PropertyGroup>
+
+  <!-- publish -->
+  <PropertyGroup>
+    <IsPublishable>true</IsPublishable>
+    <PublishRelease>true</PublishRelease>
+    <PublishDocumentationFile>true</PublishDocumentationFile>
+    <RollForward>LatestMinor</RollForward>
+    <PublishDir>$(NMLibDir)$(MSBuildProjectName)\</PublishDir>
   </PropertyGroup>
 
   <!-- nuget -->
