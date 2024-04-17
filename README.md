@@ -5,7 +5,7 @@
 ## How to install
 |.Net CLI|
 |:---|
-|dotnet tool install --global NM.Tools.Dotnet.MSbuild.BuildXml|
+|dotnet tool install --global NM.Tools.Dotnet.MSbuild.BuildXml --version 0.0.1-alpha1.2|
 
 
 ## How to use
