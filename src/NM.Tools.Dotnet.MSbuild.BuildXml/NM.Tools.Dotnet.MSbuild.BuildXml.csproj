@@ -21,6 +21,14 @@
     <Authors>Nemonuri</Authors>
     <Description>Make basic MSBuild XML templetes on directory chain</Description>
     <Copyright>Copyright (c) $(Authors) 2024</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/nemonuri/nm-tools-msbuilds-xmls</RepositoryUrl>
+    <PackageProjectUrl>$(RepositoryUrl)</PackageProjectUrl>
+    <PackageIcon>buildxml_icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>MSBuild;XML;props;targets;tool</PackageTags>
+    <PackageReleaseNotes>First alpha version</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +41,7 @@
 
   <ItemGroup>
     <None Include="..\..\image\**\*.*" Pack="true" PackagePath="\" LinkBase="image"/>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" LinkBase="doc"/>
   </ItemGroup>
 
 </Project>
