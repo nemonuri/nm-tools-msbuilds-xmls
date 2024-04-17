@@ -1,0 +1,38 @@
+﻿<!-- https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <LangVersion>12</LangVersion>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <!-- nuget -->
+  <!-- https://learn.microsoft.com/en-us/nuget/what-is-nuget -->
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>NM.Tools.Dotnet.MSbuild.BuildXml</PackageId>
+    <PackageType>DotnetTool</PackageType>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix>alpha1</VersionSuffix>
+    <Authors>Nemonuri</Authors>
+    <Description>Make basic MSBuild XML templetes on directory chain</Description>
+    <Copyright>Copyright (c) $(Authors) 2024</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PolySharp" Version="1.14.*" Condition="'$(TargetFramework)' == 'netstandard2.0'">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.CommandLine" Version="2.0.0-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\image\**\*.*" Pack="true" PackagePath="\" LinkBase="image"/>
+  </ItemGroup>
+
+</Project>
